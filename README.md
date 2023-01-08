@@ -1,4 +1,4 @@
-# Study-Alone
-1. Data Structure
+# Study-Alone 📒
+1. Deep Learning Framework 
 2. MATLAB
-3. Simulink
+3. Simulink 
