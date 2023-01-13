@@ -9,6 +9,8 @@
 * [Moving Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Moving_Average_Filter)
 * [Moving Average Filter 정리](https://velog.io/@soup1997/Moving-Average-Filter)
 
+1/15 - Lowpass Filter
+
 ## Deep Learning 🧬
 ### 2023年
 ## Simulink 🔧
