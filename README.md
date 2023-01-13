@@ -4,8 +4,9 @@
 ## MATLAB 📊
 ### 2023年
 1/13
-* 평균 필터 정리: https://velog.io/@soup1997/%ED%8F%89%EA%B7%A0%ED%95%84%ED%84%B0   
 * [Average Filter](https://github.com/soup1997/Study-Alone/tree/origin/Average_Filter)
+* 평균 필터 정리: https://velog.io/@soup1997/%ED%8F%89%EA%B7%A0%ED%95%84%ED%84%B0   
+
 ## Deep Learning 🧬
 ### 2023年
 ## Simulink 🔧
