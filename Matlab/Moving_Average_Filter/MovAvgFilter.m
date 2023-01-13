@@ -10,7 +10,7 @@ if isempty(firstRun)
 end
 
 
-% Queue의 FIFO 특성을 나타냄
+% Queue의 FIFO 특성을 이용하여 구현하는게 더 간편함
 for m=1:n-1
     xbuf(m) = xbuf(m+1); % 데이터 앞으로 옮기기
 end
