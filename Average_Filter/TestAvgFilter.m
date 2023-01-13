@@ -22,3 +22,4 @@ plot(t, Xmsaved, 'r:*');
 hold on;
 plot(t, AvgSaved, 'o-');
 legend('Measured', 'Average');
+saveas(gcf, 'Average Filter.png')
