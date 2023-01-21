@@ -2,6 +2,7 @@
 매일 공부하는 것을 기록하고 정리하기 위한 레포지토리
 
 ## MATLAB 📊
+![image](https://user-images.githubusercontent.com/86957779/213846712-409fa8ef-368d-489a-b611-c254f5826afe.png)
 ### 2023年
 1/13 - Average Filter, Moving Average Filter
 * [Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Average_Filter)
