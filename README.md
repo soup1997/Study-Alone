@@ -15,7 +15,7 @@
 * [Lowpass Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Lowpass_Filter)
 * [Lowpass Filter 정리](https://velog.io/@soup1997/Lowpass-Filter)
 
-1/26 - Kalman Filter, Simulink
+1/26 - Kalman Filter, Simulink Onramp 수강시작
 * [Kalman Filter 정리](https://velog.io/@soup1997/Linear-Kalman-Filter)
 * Simulink
 
