@@ -17,7 +17,9 @@
 
 1/26 - Kalman Filter, Simulink Onramp 수강시작
 * [Kalman Filter 정리](https://velog.io/@soup1997/Linear-Kalman-Filter)
-* Simulink
+* Simulink   
+![image](https://user-images.githubusercontent.com/86957779/214764816-459a8cc9-0050-488b-9d5a-309d1dfd6ee7.png)
+
 
 1/27 - Kalman Filter
 * [Kalman Filter(MATLAB)]()
