@@ -21,7 +21,6 @@ end
 
 for i=1:3
     subplot(3, 1, i)
-    xlabel('Time [sec]')
     
     if i == 1
         plot(t, Xsaved(:, 1), 'o-'); % Estimated Voltage
@@ -39,6 +38,7 @@ for i=1:3
         ylabel('K')
         title(plot_title(i+1))
     end
+    xlabel('Time [sec]')
     grid on;
 end
 
