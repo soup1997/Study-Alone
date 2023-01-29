@@ -21,7 +21,7 @@
 1/27 - Kalman Filter, PI제어기 업로드, Simulink Onramp 수료 🏆
 * [Kalman Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab) 
 * [Kalman Filter 정리(초간단 예제)](https://velog.io/@soup1997/Linear-Kalman-Filter-Simple-Example)
-* [Kalman Filter 정리(초간단 예제)](https://velog.io/@soup1997/Linear-Kalman-Filter-Simple-Example)
+* [PI Controller(Simulink)](https://github.com/soup1997/Study-Alone/tree/origin/Simulink)
 * Linux (Difference between 'purge' and 'remove')   
 `$ sudo apt remove package_name`   
 `$ sudo apt purge package_name`   
