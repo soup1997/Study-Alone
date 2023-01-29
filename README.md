@@ -31,6 +31,6 @@ Both apt-remove and apt-purge do the same thing and that is to uninstall a packa
 1/30 - Kalman Filter
 ## Deep Learning 🧬
 
-1/30 - Pytorch, 밑바닥부터 시작하는 딥러닝 1장
+1/30 - Pytorch, 밑바닥부터 시작하는 딥러닝 3장
 
 ### 2023年
