@@ -28,5 +28,9 @@ Both apt-remove and apt-purge do the same thing and that is to uninstall a packa
 * udev 설정 방법   
 [장치 이름 고정 및 권한 고정](https://velog.io/@717lumos/Linux-USB-%EC%9E%A5%EC%B9%98-%EC%9D%B4%EB%A6%84-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0-udev-%EC%84%A4%EC%A0%95-Symbolic-Link%EC%8B%AC%EB%B3%BC%EB%A6%AD-%EB%A7%81%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
+1/30 - Kalman Filter
 ## Deep Learning 🧬
+
+1/30 - Pytorch, 밑바닥부터 시작하는 딥러닝 1장
+
 ### 2023年
