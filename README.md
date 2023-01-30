@@ -4,21 +4,20 @@
 ## MATLAB/Simulink(📊) , Deep Learning(Pytorch, Tensorflow)(🧬), Troubleshooting(✔), C++
 ### 2023年
 1/8 - MATLAB Onramp 수료 🏆    
-
+***
 1/13 - Average Filter, Moving Average Filter   
 🔹 [Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Average_Filter)   
 🔹 [Average Filter 정리](https://velog.io/@soup1997/%ED%8F%89%EA%B7%A0%ED%95%84%ED%84%B0)   
 🔹 [Moving Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Moving_Average_Filter)   
 🔹 [Moving Average Filter 정리](https://velog.io/@soup1997/Moving-Average-Filter)  
-
+***
 1/16 - Lowpass Filter   
 🔹 [Lowpass Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Lowpass_Filter)   
 🔹 [Lowpass Filter 정리](https://velog.io/@soup1997/Lowpass-Filter)   
-
+***
 1/26 - Kalman Filter, Simulink Onramp 수강시작   
 🔹 [Kalman Filter 정리](https://velog.io/@soup1997/Linear-Kalman-Filter)   
-
-
+***
 1/27 - Kalman Filter, PI제어기 업로드, Simulink Onramp 수료 🏆   
 🔹 [Kalman Filter(Simple example)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab)   
 🔹 [Kalman Filter 정리(Simple example)](https://velog.io/@soup1997/Linear-Kalman-Filter-Simple-Example)   
@@ -27,14 +26,48 @@
 >`$ sudo apt remove package_name`   
 >`$ sudo apt purge package_name`    
 >Both apt-remove and apt-purge do the same thing and that is to uninstall a package. The apt-purge removes the package and purges any configuration files associated with it. That’s the only difference between the two.   
-
 🔹 [장치 이름 고정 및 권한 고정](https://velog.io/@717lumos/Linux-USB-%EC%9E%A5%EC%B9%98-%EC%9D%B4%EB%A6%84-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0-udev-%EC%84%A4%EC%A0%95-Symbolic-Link%EC%8B%AC%EB%B3%BC%EB%A6%AD-%EB%A7%81%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)(Linux)
-
+***
 1/30 - Kalman Filter, Pytorch    
 🔹 [Kalman Filter(Esimating the velocity by poision)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Estimate%20the%20speed%20by%20position))   
 🔹 [Kalman Filter 정리(Estimating the velocity by position)](https://velog.io/@soup1997/Linear-Kalman-FilterEstimating-the-speed-by-position)   
-🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (50% 정리)
+🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (50% 정리)   
+🔹 고정 IP할당 및 와이파이 자동 설정(Linux)   
+```bash
+sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
 
+wpa_passphrase NGV_NEW_02 'ngv02!@#'
+
+ -> 위 명령어 입력 시 아래 처럼 출력됨
+network={
+   ssid="NGV_NEW_02"
+   #psk="ngv02!@#"
+   psk = ~~~
+}
+network={
+   ssid="NGV_NEW_02"
+   #psk="ngv02!@#"
+   psk=53d92a34f43d2dcda92866d8d99f70b895dd6bc247831a5310deea525d47eab1
+}
+ -> 위의 내용을 복사해서 wpa_supplicant.conf에 붙여넣기
+ -> password 내용 ngv02!@# 부분은 지우기
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+sudo reboot
+
+--------------------
+
+# 고정 ip 할당
+
+sudo nano /etc/dhcpcd.conf
+
+interface wlan0
+static ip_address=172.16.1.~
+static routers=172.16.255.255
+static netmask=255.255.0.0
+
+sudo wpa_cli -i wlan0 reconfigure
+```
+***
 1/31 - Kalman Filter, Pytorch    
 🔹    
 🔹    
