@@ -36,26 +36,24 @@
 ```bash
 sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
 
-wpa_passphrase NGV_NEW_02 'ngv02!@#'
+wpa_passphrase 와이파이이름 '비밀번호'
 
  -> 위 명령어 입력 시 아래 처럼 출력됨
 network={
-   ssid="NGV_NEW_02"
-   #psk="ngv02!@#"
+   ssid="와이파이이름"
+   #psk="비밀번호"
    psk = ~~~
 }
 network={
-   ssid="NGV_NEW_02"
-   #psk="ngv02!@#"
+   ssid="와이파이이름"
+   #psk="비밀번호"
    psk=53d92a34f43d2dcda92866d8d99f70b895dd6bc247831a5310deea525d47eab1
 }
  -> 위의 내용을 복사해서 wpa_supplicant.conf에 붙여넣기
- -> password 내용 ngv02!@# 부분은 지우기
+
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 sudo reboot
-
 --------------------
-
 # 고정 ip 할당
 
 sudo nano /etc/dhcpcd.conf
