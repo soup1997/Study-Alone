@@ -34,3 +34,7 @@
 🔹 [Kalman Filter(Esimating the velocity by poision)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Estimate%20the%20speed%20by%20position))   
 🔹 [Kalman Filter 정리(Estimating the velocity by position)](https://velog.io/@soup1997/Linear-Kalman-FilterEstimating-the-speed-by-position)   
 🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (50% 정리)
+
+1/30 - Kalman Filter, Pytorch 
+🔹 
+🔹 
