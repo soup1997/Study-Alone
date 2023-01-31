@@ -67,7 +67,7 @@ static netmask=255.255.0.0
 sudo wpa_cli -i wlan0 reconfigure
 ```
 ***
-1/31 - Kalman Filter, Pytorch, 밑바닥부터 시작하는 딥러닝(3장, 신경망)
+1/31 - Kalman Filter, Pytorch, 밑바닥부터 시작하는 딥러닝(3장, 신경망)   
 🔹 [Kalman Filter(Object Tracking)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Object%20Tracking))    
 🔹 [Kalman Filter 정리(Object Tracking)](https://velog.io/@soup1997/Linear-Kalman-FilterObject-Tracking)   
 🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (100% 정리)     
