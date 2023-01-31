@@ -6,7 +6,11 @@ persistent firstRun
 
 if isempty(firstRun)
     dt = 1; % 1 Hz
-
+    
+    %{
+    posx_(k+1) = (posx + velx * dt)
+    posy_(k+1) = (posy + vely * dt)
+    %}
     A = [1, dt, 0, 0
          0, 1, 0, 0
          0, 0, 1, dt
