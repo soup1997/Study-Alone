@@ -3,22 +3,24 @@
 
 ## MATLAB/Simulink(📊) , Deep Learning(Pytorch, Tensorflow)(🧬), Troubleshooting(✔), Data Structure(🛢), C++
 ### 2023年
-1/8 - MATLAB Onramp 수료 🏆    
+1/8   
+🔹 MATLAB Onramp 수료 🏆    
 ***
-1/13 - Average Filter, Moving Average Filter   
+1/13      
 🔹 [Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Average_Filter)   
 🔹 [Average Filter 정리](https://velog.io/@soup1997/%ED%8F%89%EA%B7%A0%ED%95%84%ED%84%B0)   
 🔹 [Moving Average Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Moving_Average_Filter)   
 🔹 [Moving Average Filter 정리](https://velog.io/@soup1997/Moving-Average-Filter)  
 ***
-1/16 - Lowpass Filter   
+1/16     
 🔹 [Lowpass Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Lowpass_Filter)   
 🔹 [Lowpass Filter 정리](https://velog.io/@soup1997/Lowpass-Filter)   
 ***
-1/26 - Kalman Filter, Simulink Onramp 수강시작   
+1/26     
 🔹 [Kalman Filter 정리](https://velog.io/@soup1997/Linear-Kalman-Filter)   
 ***
-1/27 - Kalman Filter, PI제어기 업로드, Simulink Onramp 수료 🏆   
+1/27    
+🔹 Simulink Onramp 수료 🏆   
 🔹 [Kalman Filter(Simple example)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab)   
 🔹 [Kalman Filter 정리(Simple example)](https://velog.io/@soup1997/Linear-Kalman-Filter-Simple-Example)   
 🔹 [PI Controller(Simulink)](https://github.com/soup1997/Study-Alone/tree/origin/Simulink)   
@@ -29,7 +31,7 @@
 
 🔹 [장치 이름 고정 및 권한 고정](https://velog.io/@717lumos/Linux-USB-%EC%9E%A5%EC%B9%98-%EC%9D%B4%EB%A6%84-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0-udev-%EC%84%A4%EC%A0%95-Symbolic-Link%EC%8B%AC%EB%B3%BC%EB%A6%AD-%EB%A7%81%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)(Linux)
 ***
-1/30 - Kalman Filter, Pytorch    
+1/30   
 🔹 [Kalman Filter(Esimating the velocity by poision)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Estimate%20the%20speed%20by%20position))   
 🔹 [Kalman Filter 정리(Estimating the velocity by position)](https://velog.io/@soup1997/Linear-Kalman-FilterEstimating-the-speed-by-position)   
 🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (50% 정리)   
@@ -67,7 +69,7 @@ static netmask=255.255.0.0
 sudo wpa_cli -i wlan0 reconfigure
 ```
 ***
-1/31 - Kalman Filter, Pytorch, 밑바닥부터 시작하는 딥러닝(3장, 신경망)   
+1/31     
 🔹 [Kalman Filter(Object Tracking)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Object%20Tracking))    
 🔹 [Kalman Filter 정리(Object Tracking)](https://velog.io/@soup1997/Linear-Kalman-FilterObject-Tracking)   
 🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (100% 정리)     
