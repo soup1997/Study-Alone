@@ -26,5 +26,6 @@ plot(Xmsaved(1, :), Xmsaved(2, :), '*');
 plot(Xhsaved(1, :), Xhsaved(2, :), 's');
 xlabel('y [pixel]');
 ylabel('x [pixel]');
-grid on;
+legend('Measurements', 'Kalman Filter')
 set(gca, 'yDir', 'reverse');
+saveas(gcf,'result.png')
