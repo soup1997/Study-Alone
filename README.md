@@ -69,4 +69,4 @@ sudo wpa_cli -i wlan0 reconfigure
 ***
 1/31 - Kalman Filter, Pytorch    
 🔹 [Kalman Filter(Object Tracking)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman_Filter(Object%20Tracking))
-🔹    
+🔹 [Kalman Filter 정리(Object Tracking)](https://velog.io/@soup1997/Linear-Kalman-FilterObject-Tracking)
