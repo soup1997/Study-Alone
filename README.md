@@ -79,3 +79,4 @@ sudo wpa_cli -i wlan0 reconfigure
 ***
 2/1   
 🔹 [Kalman Filter(Sensor Fusion(Accelerometer, Gyroscope)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman%20Filter(Sensor%20Fusion(Accelerometer%2C%20Gyroscope)))
+🔹 [밑바닥부터 시작하는 딥러닝(4장, 신경망)]()
