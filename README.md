@@ -76,3 +76,6 @@ sudo wpa_cli -i wlan0 reconfigure
 🔹 [밑바닥부터 시작하는 딥러닝(3장, 신경망)](https://github.com/soup1997/Study-Alone/tree/origin/Deep%20Learning/Neural%20Network)   
 🔹 [Norm 이란?](https://bskyvision.com/entry/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%ED%95%99-%EB%86%88norm%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)   
 🔹 [Pytorch Gradient](https://gaussian37.github.io/dl-pytorch-gradient/)
+***
+2/1   
+🔹 [Kalman Filter(Sensor Fusion(Accelerometer, Gyroscope)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Kalman%20Filter(Sensor%20Fusion(Accelerometer%2C%20Gyroscope)))
