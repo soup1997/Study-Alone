@@ -21,10 +21,9 @@ for k=1:Nsamples
     EulerSaved(k, :) = [phi, theta, psi];
 end
 
-radtodeg = EulerSaved(:, :) * (180/pi); % radian to degree
+radtodeg = EulerSaved .* (180/pi); % radian to degree
 
-dt = 0.01;
-t = 0:dt:Nsamples*dt - dt;
+t = 0:dt:(Nsamples*dt - dt);
 
 ylabel_list = ["Roll angle[deg]", "Pitch angle[deg]", "Yaw angle[deg]"];
 

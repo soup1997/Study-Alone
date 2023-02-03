@@ -13,7 +13,7 @@ if isempty(firstRun)
 
     % Initial Value
     x_hat = [1, 0, 0, 0]';
-    P = eye(4);
+    P = 1.0 * eye(4);
 
     firstRun = 1;
 end
@@ -27,6 +27,6 @@ x_hat = xp + K*(z - H*xp);
 P = Pp - K*H*Pp;
 
 % Quaternion to Euler
-phi = atan2(2*(x_hat(3)*x_hat(4) + x_hat(1)*x_hat(2)), 1 -2*(x_hat(2)^2 + x_hat(3)&2));
+phi = atan2(2*(x_hat(3)*x_hat(4) + x_hat(1)*x_hat(2)), 1 - 2*(x_hat(2)^2 + x_hat(3)^2));
 theta = -asin(2*(x_hat(2)*x_hat(4) - x_hat(1)*x_hat(3)));
 psi = atan2(2*(x_hat(2)*x_hat(3) + x_hat(1)*x_hat(4)), 1 - 2*(x_hat(3)^2+x_hat(4)^2));
