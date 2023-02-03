@@ -84,3 +84,8 @@ sudo wpa_cli -i wlan0 reconfigure
 2/2   
 🔹 [밑바닥부터 시작하는 딥러닝(4장, 신경망학습)](https://github.com/soup1997/Study-Alone/blob/origin/Deep%20Learning/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%ED%95%99%EC%8A%B5(4%EC%9E%A5)/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D(4%EC%9E%A5).ipynb)   
 🔹 [Pytorch 기초](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98(PyTorch)%20%EA%B8%B0%EC%B4%88.ipynb) (100% 정리)     
+🔹 [Git 명령어 정리](https://hackmd.io/@oW_dDxdsRoSpl0M64Tfg2g/ByfwpNJ-K)
+***
+2/3    
+🔹    
+🔹    
