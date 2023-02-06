@@ -1,5 +1,4 @@
-function [phi, theta, psi] = EulerAccel(ax, ay, az)
+function [phi, theta] = EulerAccel(ax, ay, az)
 
-phi = atan(ay / sqrt(ax^2  + az^2));
+phi = atan(ay / az);
 theta = atan(ax / sqrt(ay^2 + az^2));
-psi = atan(sqrt(ax^2 + ay^2) / az);
