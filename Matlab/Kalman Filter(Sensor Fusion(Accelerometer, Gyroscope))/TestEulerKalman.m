@@ -13,8 +13,8 @@ for k=1:Nsamples
                          r, q, -p, 0];
 
     [ax, ay, az] = GetAccel();
-    [phi, theta, psi] = EulerAccel(ax, ay, az);
-    z = EulerToQuaternion(phi, theta, psi);
+    [phi, theta] = EulerAccel(ax, ay, az);
+    z = EulerToQuaternion(phi, theta, 0);
 
     [phi, theta, psi] = EulerKalman(A, z);
 
