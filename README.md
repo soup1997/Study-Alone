@@ -86,7 +86,7 @@ sudo wpa_cli -i wlan0 reconfigure
 🔹 [Git 명령어 정리](https://hackmd.io/@oW_dDxdsRoSpl0M64Tfg2g/ByfwpNJ-K)
 ***
 2/3    
-🔹 [Kalman Filter 정리(Sensor Fusion(Accelerometer, Gyroscope)](https://velog.io/@soup1997/Linear-Kalman-FilterSensor-FusionAccelerometer-Gyroscope) (30% 정리)
+🔹 [Kalman Filter 정리(Sensor Fusion(Accelerometer, Gyroscope)](https://velog.io/@soup1997/Linear-Kalman-FilterSensor-FusionAccelerometer-Gyroscope) (30% 정리)   
 🔹 [밑바닥부터 시작하는 딥러닝(5장, 오차역전파)](https://github.com/soup1997/Study-Alone/blob/origin/Deep%20Learning/%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C(5%EC%9E%A5)/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D(5%EC%9E%A5).ipynb)   
 🔹 [Why do we need to normalize dataset?](https://dongwooklee96.github.io/post/2021/11/06/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%95%EA%B7%9C%ED%99%94%EB%9E%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.html)
 ***
