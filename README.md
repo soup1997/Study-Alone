@@ -91,5 +91,5 @@ sudo wpa_cli -i wlan0 reconfigure
 🔹 [Why do we need to normalize dataset?](https://dongwooklee96.github.io/post/2021/11/06/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%95%EA%B7%9C%ED%99%94%EB%9E%80-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.html)
 ***
 2/6   
-🔹 [Kalman Filter 정리(Sensor Fusion(Accelerometer, Gyroscope)](https://velog.io/@soup1997/Linear-Kalman-FilterSensor-FusionAccelerometer-Gyroscope) (100% 정리)
+🔹 [Kalman Filter 정리(Sensor Fusion(Accelerometer, Gyroscope)](https://velog.io/@soup1997/Linear-Kalman-FilterSensor-FusionAccelerometer-Gyroscope) (100% 정리)   
 🔹 [Extended Kalman Filter 정리]()  
