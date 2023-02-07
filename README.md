@@ -97,4 +97,8 @@ sudo wpa_cli -i wlan0 reconfigure
 ***
 2/7   
 🔹 [Extended Kalman Filter(Sensor Fusion(Accelerometer, Gyroscope))(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Extended%20Kalman%20Filter(Sensor-fusion(Accelerometer%2C%20Gyroscope)))    
-🔹 
+🔹 Difference between parameter and hyper parameter
+```
+Parameter is a value controlled through the train. 
+But hyper parameter is modeled by setting the value by the user without training.
+```
