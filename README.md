@@ -112,6 +112,6 @@ But hyper parameter is modeled by setting the value by the user without training
 * iteration는 epoch를 나누어서 실행하는 횟수라고 생각하면 됨.
 ``` 
 2/8   
-🔹 
-🔹 
-🔹 
+🔹    
+🔹    
+🔹    
