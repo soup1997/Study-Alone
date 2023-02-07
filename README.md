@@ -101,4 +101,11 @@ sudo wpa_cli -i wlan0 reconfigure
 ```
 Parameter is a value controlled through the train. 
 But hyper parameter is modeled by setting the value by the user without training.
+```   
+🔹 The meaning of epoch, batch size, iteration   
+![image](https://user-images.githubusercontent.com/86957779/217192018-60ee9108-6fc7-429b-a963-41281316d6f2.png)
+```
+* 한 번의 epoch는 인공 신경망에서 전체 데이터 셋에 대해 forward pass/backward pass 과정을 거친 것을 말함. 즉, 전체 데이터 셋에 대해 한 번 학습을 완료한 상태
+* batch size는 한 번의 batch마다 주는 데이터 샘플의 size. 여기서 batch(보통 mini-batch라고 표현)는 나눠진 데이터 셋을 뜻함
+* iteration는 epoch를 나누어서 실행하는 횟수라고 생각하면 됨.
 ```
