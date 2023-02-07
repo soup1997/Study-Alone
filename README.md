@@ -111,7 +111,9 @@ But hyper parameter is modeled by setting the value by the user without training
 * batch size는 한 번의 batch마다 주는 데이터 샘플의 size. 여기서 batch(보통 mini-batch라고 표현)는 나눠진 데이터 셋을 뜻함
 * iteration는 epoch를 나누어서 실행하는 횟수라고 생각하면 됨.
 ``` 
+***
 2/8   
 🔹    
 🔹    
-🔹    
+🔹  
+***
