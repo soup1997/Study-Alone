@@ -109,4 +109,4 @@ But hyper parameter is modeled by setting the value by the user without training
 * batch size는 한 번의 batch마다 주는 데이터 샘플의 size. 여기서 batch(보통 mini-batch라고 표현)는 나눠진 데이터 셋을 뜻함
 * iteration는 epoch를 나누어서 실행하는 횟수라고 생각하면 됨.
 ```
-🔹 [밑바닥부터 시작하는 딥러닝(6장, 학습관련기술들)]()   
+🔹 [밑바닥부터 시작하는 딥러닝(6장, 학습관련기술들)](https://github.com/soup1997/Study-Alone/blob/origin/Deep%20Learning/%ED%95%99%EC%8A%B5%EA%B8%B0%EC%88%A0(6%EC%9E%A5)/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D(6%EC%9E%A5).ipynb)   
