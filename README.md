@@ -113,7 +113,6 @@ But hyper parameter is modeled by setting the value by the user without training
 ``` 
 ***
 2/8   
-🔹 [Yaw angle calculation with EKF](https://github.com/soup1997/MPU9250-Sensor-Fusion) (센서 값 아직 못읽어옴 수정 필요)   
-🔹    
+🔹 [Yaw angle calculation with EKF](https://github.com/soup1997/MPU9250-Sensor-Fusion) (테스트코드 수정 필요)   
 🔹  
 ***
