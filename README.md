@@ -118,4 +118,5 @@ But hyper parameter is modeled by setting the value by the user without training
 ***
 2/9   
 🔹 [Pytorch 신경망 생성(분류모델 추가)](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/%ED%8C%8C%EC%9D%B4%ED%86%A0%EC%B9%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EC%83%9D%EC%84%B1.ipynb)   
+🔹 [Yaw angle calculation with EKF](https://github.com/soup1997/MPU9250-Sensor-Fusion) (LPF, 로그 데이터 추가, 데이터 가공 필요)   
 🔹 
