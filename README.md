@@ -122,5 +122,8 @@ But hyper parameter is modeled by setting the value by the user without training
 ***
 2/10   
 🔹 [Unscented Kalman Filter(Radar)(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Unscented%20Kalman%20Filter(Radar))   
-🔹 [Unscented Kalman Filter 정리(Radar)]()  
 🔹 [밑바닥부터 시작하는 딥러닝(7장, CNN)](https://github.com/soup1997/Study-Alone/blob/origin/Deep%20Learning/CNN(7%EC%9E%A5)/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D(7%EC%9E%A5).ipynb)
+***
+2/13   
+🔹 [Unscented Kalman Filter 정리(Radar)]()   
+🔹 [Unscented Kalman Filter(Sensor Fusion(Accelerometer, Gyroscope))(MATLAB)]() 
