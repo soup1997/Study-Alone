@@ -127,3 +127,6 @@ But hyper parameter is modeled by setting the value by the user without training
 2/13   
 🔹 [Unscented Kalman Filter 정리](https://velog.io/@soup1997/Unscented-Kalman-Filter)   
 🔹 [Unscented Kalman Filter(Sensor Fusion(Accelerometer, Gyroscope))(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Unscented%20Kalman%20Filter(Sensor-fusion)) 
+***
+2/14   
+🔹 [Euler angle, Quaternion](https://liqul.github.io/blog/assets/rotation.pdf)
