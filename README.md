@@ -130,3 +130,4 @@ But hyper parameter is modeled by setting the value by the user without training
 ***
 2/14   
 🔹 [Euler angle, Quaternion](https://liqul.github.io/blog/assets/rotation.pdf)
+🔹 [자동차 용어](https://blog.naver.com/jeminan24/220677702212)
