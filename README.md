@@ -1,7 +1,7 @@
 # Study-Alone
 매일 공부하는 것을 기록하고 정리하기 위한 레포지토리
 
-## MATLAB/Simulink(📊) , Deep Learning(🧬), Troubleshooting(✔), Data Structure(🛢), C++, Concept(🙄)
+## MATLAB/Simulink(📊) , Deep Learning(🧬), CARLA(🚗), Troubleshooting(✔), Data Structure(🛢), C++, Concept(🙄)
 ### 2023年
 1/8   
 🔹 MATLAB Onramp 수료 🏆    
@@ -134,4 +134,4 @@ But hyper parameter is modeled by setting the value by the user without training
 ***
 2/16   
 🔹 [Highpass Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Highpass%20Filter)   
-🔹 [Highpass Filter 정리)]()
+🔹 [Highpass Filter 정리]()
