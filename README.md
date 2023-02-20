@@ -136,7 +136,7 @@ But hyper parameter is modeled by setting the value by the user without training
 🔹 [Highpass Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Highpass%20Filter)   
 ***
 2/20   
-🔹 [Highpass Filter 정리]()   
-🔹 [자율주행 센서의 안테나 성능 예측 AI 경진대회]()   
+🔹 [Highpass Filter 정리](https://velog.io/@soup1997/Highpass-Filter)   
+🔹 [자율주행 센서의 안테나 성능 예측 AI 경진대회](https://github.com/soup1997/Study-Alone/blob/origin/Pytorch/Antenna%20performace%20prediction/README.md)   
 ***
 2/21   
