@@ -161,3 +161,14 @@ But hyper parameter is modeled by setting the value by the user without training
 4단계(반복): 1 ~ 3단계를 반복한다.
 ```
 ![image](https://user-images.githubusercontent.com/86957779/220526091-21bf7211-0a8b-42ca-8a40-26ca55f790c3.png)
+***
+2/22   
+🔹 What Are L1 and L2 Loss Functions?   
+![image](https://user-images.githubusercontent.com/86957779/220552127-7af1a4da-1606-4972-918e-7bae210d4aed.png)
+```
+Generally, L2 Loss Function is preferred in most of the cases. 
+But when the outliers are present in the dataset, then the L2 Loss Function does not perform well. 
+The reason behind this bad performance is that if the dataset is having outliers, then because of the consideration of the squared differences, it leads to the much larger error. 
+Hence, L2 Loss Function is not useful here. 
+Prefer L1 Loss Function as it is not affected by the outliers or remove the outliers and then use L2 Loss Function.`
+```
