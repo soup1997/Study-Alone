@@ -48,9 +48,6 @@ class FinalProject:
                                                                  smooth_junctions=True,
                                                                  enable_mesh_visibility=True))
         
-    def get_xosc(self, xosc_file):
-        self.scenario = sg.ParseOpenScenario(xosc_file)
-        
     def get_current_pose(self, vehicle):
         location = vehicle.get_location()
         x = location.x
