@@ -160,3 +160,4 @@ But hyper parameter is modeled by setting the value by the user without training
 
 4단계(반복): 1 ~ 3단계를 반복한다.
 ```
+![image](https://user-images.githubusercontent.com/86957779/220526091-21bf7211-0a8b-42ca-8a40-26ca55f790c3.png)
