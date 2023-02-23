@@ -174,6 +174,6 @@ Prefer L1 Loss Function as it is not affected by the outliers or remove the outl
 ```
 ***
 2/23   
-🔹 [Complimentary Filter 정리](https://velog.io/@soup1997/Complimentary-Filter)
+🔹 [Complimentary Filter 정리](https://velog.io/@soup1997/Complimentary-Filter)   
 🔹    
 🔹 
