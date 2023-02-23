@@ -172,3 +172,8 @@ The reason behind this bad performance is that if the dataset is having outliers
 Hence, L2 Loss Function is not useful here. 
 Prefer L1 Loss Function as it is not affected by the outliers or remove the outliers and then use L2 Loss Function.`
 ```
+***
+2/23   
+🔹 [Complimentary Filter 정리](https://velog.io/@soup1997/Complimentary-Filter)
+🔹    
+🔹 
