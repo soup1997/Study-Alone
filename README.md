@@ -65,5 +65,5 @@
 🔹 [Complimentary Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Complimentary%20Filter(Sensor-fusion))   
 ***
 2/27   
-🔹 [LSTM Pytorch 모델](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/lstm)
+🔹 [LSTM Pytorch 모델](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/lstm)    
 🔹 [Particle Filter(MATLAB)]()
