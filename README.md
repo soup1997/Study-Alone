@@ -64,6 +64,5 @@
 🔹 [자율주행 센서의 안테나 성능 예측 AI 경진대회](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/Antenna%20performace%20prediction)   
 🔹 [Complimentary Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Complimentary%20Filter(Sensor-fusion))   
 ***
-2/23   
-🔹    
-🔹 
+2/27
+🔹 [LSTM Pytorch 모델](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/lstm)
