@@ -1,0 +1,17 @@
+function [pm, wm] = resampling(pt, wt, Npt)
+
+% 1단계: % 각 구간에 해당 파티클의 가중치에 비례한 길이를 할당
+wtc = cumsum(wt);
+
+% 2단계: Uniform Distribution를 따르는 0~1 사이의 값을 Npt 개수만큼 새로 생성
+rpt = rand(Npt, 1);
+
+% 3단계: 3행에서 할당한 구간마다 4행에서 생성한 값이 몇개 들어있는지를 카운트
+[~, ind1] = sort([rpt; wtc']);
+ind = find(ind1 <= Npt) - [0:Npt-1]';
+
+% 4단계: 각 구간에 포함된 값의 개수만큼 해당 파티클의 개수 조절(리샘플링), 4행에서 
+pm = pt(:, ind);
+
+% 5단계: 새로 재샘플링된 파티클의 가중치를 모두 동일하게 1/ 
+wm = ones(1, Npt) / Npt;
