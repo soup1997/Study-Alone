@@ -101,7 +101,7 @@ class Net(nn.Module):
     def reset_hidden_state(self):
         # hidden_state = torch.zeros(self.n_layers,batch_size,self.n_hidden)
         # cell_state = torch.zeros(self.n_layers,batch_size,self.n_hidden)
-        return (hidden_state, cell_state)
+        # return (hidden_state, cell_state)
         self.hidden = (torch.zeros(self.layers, self.seq_len, self.hidden_dim),
                        torch.zeros(self.layers, self.seq_len, self.hidden_dim))
 
