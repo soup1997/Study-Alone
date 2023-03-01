@@ -99,6 +99,9 @@ class Net(nn.Module):
 
     # seq별로 hidden state를 초기화 하는 함수로 이전 seq의 영향을 받지 않게 하기 위함
     def reset_hidden_state(self):
+        # hidden_state = torch.zeros(self.n_layers,batch_size,self.n_hidden)
+        # cell_state = torch.zeros(self.n_layers,batch_size,self.n_hidden)
+        return (hidden_state, cell_state)
         self.hidden = (torch.zeros(self.layers, self.seq_len, self.hidden_dim),
                        torch.zeros(self.layers, self.seq_len, self.hidden_dim))
 
