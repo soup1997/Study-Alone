@@ -163,10 +163,16 @@ if __name__ == '__main__':
           
     plt.figure(0, figsize=(10, 4))
     plt.plot(train_hist, label="Training loss")
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
     plt.legend()
+    plt.savefig('train_loss.png')
 
     plt.figure(1, figsize=(10, 4))
     plt.plot(np.arange(len(pred_inverse)), pred_inverse, label='pred')
     plt.plot(np.arange(len(testY_inverse)), testY_inverse, label='true')
+    plt.xlabel('Day')
+    plt.ylabel('Stock Price')
     plt.legend()
+    plt.savefig('stock price prediction.png')
     plt.show()
