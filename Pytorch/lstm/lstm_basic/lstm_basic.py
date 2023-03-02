@@ -82,6 +82,7 @@ if __name__ == '__main__':
                              shuffle=True)
 
     model = LSTM().to(device)
+    print(model)
     criterion = nn.MSELoss().to(device)
 
     optimizer = optim.LBFGS(model.parameters(), lr=0.05)  # Limited-memory BFGS
