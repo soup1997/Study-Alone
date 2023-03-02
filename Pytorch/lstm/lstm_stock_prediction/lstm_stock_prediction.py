@@ -59,7 +59,7 @@ def train_model(model, train_df, epochs=None, lr=None, device=None):
         if epoch % 10 == 0:
             print('Epoch: {:04d}, train loss : {:.4f}'.format(epoch, avg_loss))
 
-    return model.eval(), train_hist
+    return model, train_hist
 
 
 class Net(nn.Module):
@@ -158,7 +158,7 @@ if __name__ == '__main__':
         testY_inverse = scaler_y.inverse_transform(testY_tensor)
     
     #================================================================
-    
+
     print('MAE SCORE : ', MAE(pred_inverse, testY_inverse))
           
     plt.figure(0, figsize=(10, 4))
