@@ -29,8 +29,11 @@ class Net(nn.Module):
         x = self.fc(output[:, -1])
         return x
 ```
-# Usage
-`torch.nn.LSTM(input_size, hidden_size, num_layers, bias=True, batch_first=True, dropout, bidirectional)`
+# Parameters   
+`torch.nn.LSTM(input_size, hidden_size, num_layers, bias=True, batch_first=True, dropout, bidirectional)`   
+
+[자세한 설명](https://wegonnamakeit.tistory.com/52)   
+
 * `input_size`:input의 feature dimension을 넣어주어야 한다. time step이 아닌 input feature dimension
 * `hidden_size`: 내부에서 어떤 feature dimension으로 바꿔주고 싶은지를 나타냄
 * `num_layers`: 재귀 층의 갯수
