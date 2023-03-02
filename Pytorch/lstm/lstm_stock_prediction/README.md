@@ -56,5 +56,8 @@ output, (h_t, c_t) = self.lstm(x, (h_0, c_0))
 ```bash
 Input은 입력 sequence와 초기 state (LSTM이면 {hidden state, cell state} 그 외는 {hidden state})로 구성
 초기 state가 없다면 넣어주지 않아도 되고 자동으로 zero로 설정 
-입력 sequence의 dimension은 (Batch, Time_step, Feature dimension) 순 (batch_first=True 기준)
+입력 sequence의 dimension은 (Batch, Time_step, Feature dimension)순 (batch_first=True 기준)
 ```
+
+# Reference
+* https://eunhye-zz.tistory.com/entry/Pytorch%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Timeseries-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B81-LSTM
