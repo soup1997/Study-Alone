@@ -1,4 +1,4 @@
-`LSTM`
+# `LSTM`
 ```python
 class Net(nn.Module):
     def __init__(self, input_dim, hidden_dim, seq_len, output_dim, layers):
