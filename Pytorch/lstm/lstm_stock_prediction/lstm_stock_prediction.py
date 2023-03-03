@@ -148,8 +148,6 @@ if __name__ == '__main__':
     with torch.no_grad():
         pred = []
         for pr in range(len(testX_tensor)):
-            model.reset_hidden_state(testX_tensor)
-
             predicted = model(torch.unsqueeze(testX_tensor[pr], 0))
             predicted = torch.flatten(predicted).item()
             pred.append(predicted)
