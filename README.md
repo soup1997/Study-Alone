@@ -59,9 +59,6 @@
 🔹 [자율주행 센서의 안테나 성능 예측 AI 경진대회](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/Antenna%20performace%20prediction)   
 🔹 [Complimentary Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Complimentary%20Filter(Sensor-fusion))   
 ***
-2/27   
-🔹 [LSTM 주식가격 예측](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/lstm)    
-***
 2/28   
 🔹 [LSTM Basic](https://github.com/soup1997/Study-Alone/tree/origin/Pytorch/lstm/lstm_basic)   
 🔹 [Particle Filter(MATLAB)](https://github.com/soup1997/Study-Alone/tree/origin/Matlab/Particle%20Filter(Radar))
