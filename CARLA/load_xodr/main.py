@@ -1,60 +1,90 @@
-import sys
-import os
-import numpy as np
-import glob
-try:
-    sys.path.append(glob.glob('C:/carla/CARLA_0.9.13/WindowsNoEditor/PythonAPI/carla/dist/carla-*%d.%d-%s.egg' % (
-        sys.version_info.major,
-        sys.version_info.minor,
-        'win-amd64' if os.name == 'nt' else 'linux-x86_64'))[0])
-except IndexError:
-    pass
+#!/usr/bin/env python3
 
 import carla
-
 from math import *
+import sys
+import os
+import glob
+import parameters as p
 
 
-class FinalProject:
-    def __init__(self, xodr_file, xosc_file):
+class Project:
+    def __init__(self, HOST, PORT, TIMEOUT):
+
+        try:
+            sys.path.append(glob.glob('/home/smeet/Desktop/Carla/CARLA_0.9.13/PythonAPI/carla/dist/carla-*%d.%d-%s.egg' % (
+                sys.version_info.major,
+                sys.version_info.minor,
+                'win-amd64' if os.name == 'nt' else 'linux-x86_64'))[0])
+
+        except IndexError:
+            pass
+
         self.client = carla.Client(HOST, PORT)
         self.client.set_timeout(TIMEOUT)
-        print('Calra 연결 성공!')
-        
-        self.get_xord(xodr_file)
+        print('Connection Complete', end="\n")
 
-        self.blueprint_library = self.world.get_blueprint_library()
-        self.actor_list = []
+        # os.system('/home/smeet/Desktop/Carla/CARLA_0.9.13/CarlaUE4.sh')
 
     def get_xord(self, xodr_file):
         with open(xodr_file, 'r') as od_file:
-            data = od_file.read()
+            xodr = od_file.read()
 
-        index = data.find('<OpenDRIVE>')
-        data = data[index:]
+        index = xodr.find('<OpenDRIVE>')
+        xodr = xodr[index:]
 
-        vertex_distance = 2.0  # in meters
-        wall_height = 1.0      # in meters
-        extra_width = 0.6      # in meters
+        self.world = self.client.generate_opendrive_world(str(xodr),
+                                                          carla.OpendriveGenerationParameters(
+            vertex_distance=p.vertex_distance,
+            wall_height=p.wall_height,
+            additional_width=p.extra_width,
+            smooth_junctions=p.smooth_junctions,
+            enable_mesh_visibility=p.enable_mesh_visibility,
+            enable_pedestrian_navigation=p.enable_pedestrian_navigation))
 
-        self.world = self.client.generate_opendrive_world(str(data),
-                                                                 carla.OpendriveGenerationParameters(
-                                                                 vertex_distance=vertex_distance,
-                                                                 wall_height=wall_height,
-                                                                 additional_width=extra_width,
-                                                                 smooth_junctions=True,
-                                                                 enable_mesh_visibility=True))
+    def traffic_control(self):
+        states = [carla.TrafficLightState.Red, carla.TrafficLightState.Yellow,
+                  carla.TrafficLightState.Green, carla.TrafficLightState.Off]
 
-    def __del__(self):
-        self.client.apply_batch([carla.command.DestroyActor(x)
-                                for x in self.actor_list])
+        for tl in self.world.get_actors().filter('traffic.traffic_light'):
+            print("Traffic Light: {}".format(tl))
 
+            if isinstance(tl, carla.TrafficLight):
 
-def main():
-    fp = FinalProject('E:/로드밸런싱/Map_Test/sample_senario/Road_1_sample.xodr')
+                affected_waypoints = tl.get_affected_lane_waypoints()
+
+                for waypoints in affected_waypoints:
+                    point = waypoints.transform.location
+                    location = carla.Location(x=point.x, y=point.y)
+
+                    self.world.debug.draw_point(
+                        location, size=0.2, color=carla.Color(255, 0, 0), life_time=-1)
+
+                for traffic_state in states:
+
+                    tl.set_state(traffic_state)
+
+                    if traffic_state == carla.TrafficLightState.Red:
+                        tl.set_red_time(4.0)
+
+                    elif traffic_state == carla.TrafficLightState.Yellow:
+                        tl.set_yellow_time(4.0)
+
+                    elif traffic_state == carla.TrafficLightState.Green:
+                        tl.set_green_time(4.0)
+
+                    else:
+                        break
+
+    def main(self):
+        self.get_xord(xodr_file='./Road_1_sample.xodr')
+        self.traffic_control()
+
 
 if __name__ == '__main__':
     try:
-        main()
+        car = Project(HOST='localhost', PORT=2000, TIMEOUT=10.0)
+        car.main()
+
     except KeyboardInterrupt:
-        print('\nCancelled by user. Bye!')
+        print('\nCancelled by user!')
