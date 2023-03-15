@@ -40,8 +40,6 @@ def train_model(model, train_df, epochs=None, lr=None, device=None):
         total_batch = len(train_df)
 
         for batch_idx, (trainX, trainY) in enumerate(train_df):
-            model.reset_hidden_state(trainX)
-
             # H(x) 계산
             outputs = model(trainX)
 
