@@ -2,20 +2,20 @@
 #include <string>
 
 int main() {
-	// Ç¥ÁØÀÌ¹Ç·Î std¾È¿¡ stringÀÌ Á¤ÀÇµÇ¾î ÀÖÀ½
+	// í‘œì¤€ì´ë¯€ë¡œ stdì•ˆì— stringì´ ì •ì˜ë˜ì–´ ìˆìŒ
 	std::string s = "abc";
 	std::string t = "def";
 	std::string s2 = s;
 
-	std::cout << s << "ÀÇ ±æÀÌ: " << s.length() << std::endl;
-	std::cout << s << " µÚ¿¡" << t << " ¸¦ ºÙÀÌ¸é :" << s + t << std::endl;
+	std::cout << s << "ì˜ ê¸¸ì´: " << s.length() << std::endl;
+	std::cout << s << " ë’¤ì—" << t << " ë¥¼ ë¶™ì´ë©´ :" << s + t << std::endl;
 
 	if (s == s2) {
-		std::cout << s << " ¿Í " << s2 << " ´Â °°´Ù" << std::endl;
+		std::cout << s << " ì™€ " << s2 << " ëŠ” ê°™ë‹¤" << std::endl;
 	}
 
 	if (s != t) {
-		std::cout << s << " ¿Í " << t << " ´Â ´Ù¸£´Ù" << std::endl;
+		std::cout << s << " ì™€ " << t << " ëŠ” ë‹¤ë¥´ë‹¤" << std::endl;
 	}
 
 	t.insert(3, "g");
@@ -25,11 +25,17 @@ int main() {
 	t.replace(3, replace.length(), replace);
 	std::cout << "replace function: " << t << std::endl; // insert function: defg
 
-	t.erase(3); // erase(½ÃÀÛÀ§Ä¡, ³¡ À§Ä¡) ³¡ À§Ä¡ ÁöÁ¤¾ÈÇÒ½Ã ³¡ À§Ä¡±îÁö ÀÚµ¿À¸·Î ÇÒ´ç
+	t.erase(3); // erase(ì‹œì‘ìœ„ì¹˜, ë ìœ„ì¹˜) ë ìœ„ì¹˜ ì§€ì •ì•ˆí• ì‹œ ë ìœ„ì¹˜ê¹Œì§€ ìë™ìœ¼ë¡œ í• ë‹¹
 	std::cout << "erase function: " << t << std::endl; // insert function: defg
 
-	t.clear(); // ¹®ÀÚ¿­ »èÁ¦, NULLÀÌ µÈ´Ù.
+	t.clear(); // ë¬¸ìì—´ ì‚­ì œ, NULLì´ ëœë‹¤.
 	std::cout << "clear function: " << t << std::endl; // insert function: defg
 	
+	/* ì´ì™¸ì˜ string í´ë˜ìŠ¤ ë©¤ë²„ í•¨ìˆ˜ */
+	t.front(); // ë§¨ ì•ì˜ ì¸ì ë°˜í™˜
+	t.back(); // ë§¨ ë’¤ ì¸ì ë°˜í™˜
+	t.empty(); // ë¹„ì–´ìˆë‹¤ë©´ True ë°˜í™˜
+	t.find("d") // ì¼ì¹˜í•˜ëŠ” ë¬¸ìì—´ì´ ìˆë‹¤ë©´ ì¼ì¹˜í•˜ëŠ” ë¶€ë¶„ì˜ index ë°˜í™˜
+		
 	return 0;
 }
