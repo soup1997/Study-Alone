@@ -2,14 +2,14 @@
 #include <string>
 #pragma warning(disable:4996)
 
-//====================== Å¬·¡½º »ó¼Ó Æ©Åä¸®¾ó ==========================
+//====================== í´ë˜ìŠ¤ ìƒì† íŠœí† ë¦¬ì–¼ ==========================
 class Base {
 protected:
 	std::string parent_string;
 
 public:
-	Base() : parent_string("±â¹İ") {
-		std::cout << "±â¹İ Å¬·¡½º" << std::endl;
+	Base() : parent_string("ê¸°ë°˜") {
+		std::cout << "ê¸°ë°˜ í´ë˜ìŠ¤" << std::endl;
 	}
 
 	void what() {
@@ -23,13 +23,13 @@ private:
 	std::string child_string;
 
 public:
-	Derived() : Base(), child_string("ÆÄ»ı") {
-		std::cout << "ÆÄ»ı Å¬·¡½º" << std::endl;
+	Derived() : Base(), child_string("íŒŒìƒ") {
+		std::cout << "íŒŒìƒ í´ë˜ìŠ¤" << std::endl;
 
 		Base::what();
 		Derived::what();
 
-		Base::parent_string = "¹Ù²Ù±â"; // protected keyword¿¡ ¼±¾ğµÈ º¯¼ö³ª ¸Ş¼­µå´Â »ó¼Ó¹Ş¾Æ »ç¿ë°¡´ÉÇÏ´Ù.
+		Base::parent_string = "ë°”ê¾¸ê¸°"; // protected keywordì— ì„ ì–¸ëœ ë³€ìˆ˜ë‚˜ ë©”ì„œë“œëŠ” ìƒì†ë°›ì•„ ì‚¬ìš©ê°€ëŠ¥í•˜ë‹¤.
 	}
 
 	void what() {
@@ -39,7 +39,7 @@ public:
 //=======================================================================
 
 class Employee {
-	// Manager Å¬·¡½º¿¡¼­ »ó¼Ó¹Ş¾Æ Á¢±ÙÇØ¾ß ÇÏ¹Ç·Î private Å°¿öµå·Î ÁöÁ¤ÇÏ¸é Á¢±ÙÀÌ ºÒ°¡´É
+	// Manager í´ë˜ìŠ¤ì—ì„œ ìƒì†ë°›ì•„ ì ‘ê·¼í•´ì•¼ í•˜ë¯€ë¡œ private í‚¤ì›Œë“œë¡œ ì§€ì •í•˜ë©´ ì ‘ê·¼ì´ ë¶ˆê°€ëŠ¥
 protected:
 	std::string name;
 	int age;
@@ -60,7 +60,7 @@ public:
 	Employee() {}
 
 	void print_info() {
-		std::cout << name << " (" << position << " , " << age << ") ==>" << calculate_pay() << "¸¸¿ø" << std::endl;
+		std::cout << name << " (" << position << " , " << age << ") ==>" << calculate_pay() << "ë§Œì›" << std::endl;
 	}
 
 	int calculate_pay() {
@@ -87,7 +87,7 @@ public:
 
 	void print_info() {
 		std::cout << name << " (" << position << " , " << age << " , "
-			<< year_of_service << "³âÂ÷) ==> " << calculate_pay() << "¸¸¿ø" << std::endl;
+			<< year_of_service << "ë…„ì°¨) ==> " << calculate_pay() << "ë§Œì›" << std::endl;
 	}
 };
 
@@ -136,7 +136,7 @@ public:
 			manager_list[i]->print_info();
 			total_pay += manager_list[i]->calculate_pay();
 		}
-		std::cout << "ÃÑ ºñ¿ë: " << total_pay << "¸¸¿ø" << std::endl;
+		std::cout << "ì´ ë¹„ìš©: " << total_pay << "ë§Œì›" << std::endl;
 	}
 
 	~EmployeeList() {
@@ -155,13 +155,13 @@ public:
 int main() {
 	EmployeeList emp_list(10);
 
-	emp_list.add_employee(new Employee("³ëÈ«Ã¶", 34, "Æò»ç¿ø", 1));
-	emp_list.add_employee(new Employee("ÇÏµ¿ÈÆ", 34, "Æò»ç¿ø", 1));
-	emp_list.add_employee(new Manager("À¯Àç¼®", 41, "ºÎÀå", 7, 12));
-	emp_list.add_employee(new Manager("Á¤ÁØÇÏ", 43, "°úÀå", 4, 15));
-	emp_list.add_employee(new Manager("¹Ú¸í¼ö", 43, "Â÷Àå", 5, 13));
-	emp_list.add_employee(new Employee("³ëÈ«Ã¶", 34, "´ë¸®", 2));
-	emp_list.add_employee(new Employee("³ëÈ«Ã¶", 34, "ÀÎÅÏ", -1));
+	emp_list.add_employee(new Employee("ë…¸í™ì² ", 34, "í‰ì‚¬ì›", 1));
+	emp_list.add_employee(new Employee("í•˜ë™í›ˆ", 34, "í‰ì‚¬ì›", 1));
+	emp_list.add_employee(new Manager("ìœ ì¬ì„", 41, "ë¶€ì¥", 7, 12));
+	emp_list.add_employee(new Manager("ì •ì¤€í•˜", 43, "ê³¼ì¥", 4, 15));
+	emp_list.add_employee(new Manager("ë°•ëª…ìˆ˜", 43, "ì°¨ì¥", 5, 13));
+	emp_list.add_employee(new Employee("ì •í˜•ëˆ", 36, "ëŒ€ë¦¬", 2));
+	emp_list.add_employee(new Employee("ê¸¸ì„±ì¤€", 36, "ì¸í„´", -1));
 
 	emp_list.print_employee_info();
 
