@@ -3,6 +3,6 @@
 ### MATLAB/Simulink(📊)    
 ### Deep Learning(🧬)      
 ### Troubleshooting(✔)   
-### C++/Data Structure, Alogithm(🤔)
+### C++, Data Structure/Algithm(🤔)
 ### Concept(🔎)
 
