@@ -13,7 +13,7 @@ void print(Iter begin, Iter end) {
 
 template <typename T>
 struct comp {
-	bool operator()(const T& a, const T& b) const { return a > b; } // return°ªÀÌ falseÀÌ¸é swapÇÑ´Ù.
+	bool operator()(const T& a, const T& b) const { return a > b; } // returnê°’ì´ falseì´ë©´ swapí•œë‹¤.
 };
 
 void sorting() {
@@ -26,14 +26,14 @@ void sorting() {
 	vec.push_back(7);
 	vec.push_back(2);
 
-	std::cout << "Á¤·Ä Àü ----" << std::endl;
+	std::cout << "ì •ë ¬ ì „ ----" << std::endl;
 	print(vec.begin(), vec.end());
 	std::sort(vec.begin(), vec.end());
 
-	std::cout << "¿À¸§Â÷ ¼ø Á¤·Ä ÈÄ ----" << std::endl;
+	std::cout << "ì˜¤ë¦„ì°¨ ìˆœ ì •ë ¬ í›„ ----" << std::endl;
 	print(vec.begin(), vec.end());
 
-	std::cout << "³»¸²Â÷ ¼ø Á¤·Ä ÈÄ ----" << std::endl;
+	std::cout << "ë‚´ë¦¼ì°¨ ìˆœ ì •ë ¬ í›„ ----" << std::endl;
 	std::sort(vec.begin(), vec.end(), comp<int>());
 	print(vec.begin(), vec.end());
 }
@@ -56,10 +56,10 @@ void remove() {
 	vec.push_back(3);
 	vec.push_back(2);
 
-	std::cout << "Ã³À½ vec »óÅÂ -----" << std::endl;
+	std::cout << "ì²˜ìŒ vec ìƒíƒœ -----" << std::endl;
 	print2(vec.begin(), vec.end());
 
-	std::cout << "º¤ÅÍ¿¡¼­ °ªÀÌ 3ÀÎ ¿ø¼Ò Á¦°Å -----" << std::endl;
+	std::cout << "ë²¡í„°ì—ì„œ ê°’ì´ 3ì¸ ì›ì†Œ ì œê±° -----" << std::endl;
 	vec.erase(std::remove(vec.begin(), vec.end(), 3), vec.end());
 	print2(vec.begin(), vec.end());
 }
@@ -69,3 +69,17 @@ int main() {
 	std::cout << std::endl;
 	remove();
 }
+
+/* 
+ì •ë ¬ ì „ ----
+5 3 1 6 4 7 2
+ì˜¤ë¦„ì°¨ ìˆœ ì •ë ¬ í›„ ----
+1 2 3 4 5 6 7
+ë‚´ë¦¼ì°¨ ìˆœ ì •ë ¬ í›„ ----
+7 6 5 4 3 2 1
+
+ì²˜ìŒ vec ìƒíƒœ -----
+[5][3][1][3][4][3][2]
+ë²¡í„°ì—ì„œ ê°’ì´ 3ì¸ ì›ì†Œ ì œê±° -----
+[5][1][4][2]
+*/
