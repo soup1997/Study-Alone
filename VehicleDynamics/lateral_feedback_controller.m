@@ -7,11 +7,11 @@ Cf = 80000;
 Cr = 80000;
 Vx = 30;
  
-dt = 0.001;
+dt = 0.01;
 t = 0:dt:300;
 R = zeros(length(t));
-R(1:) = Inf;
-R(length(t)/2:end) = 1000;
+R(1:100) = Inf; % from 0 to 10 sec (straight, radius=inf)
+R(100:end) = 1000; % from 10 sec to 300 sec (circle, radius=1000)
 
 x = [0, 0, 0, 0]'; % e1, e1_dot, e2, e2_dot
 
@@ -31,10 +31,9 @@ B2 = [0;
       (2*Cf*lf^2 + 2*Cr*lr^2)/-Iz*Vx];
 
 
-for i = t
+for radius = R
     psi_des = Vx/R;
-    dx = A*x;
-
+    steering_angle = L/R + ((mf/(2*Cf))-(mr/(2*Cr)) * (Vx^2/R));
+    dx = (A*x) + (B1.*steering_angle) + (B2 .*psi_des);
+    x = dx * dt;
 end
-
-
